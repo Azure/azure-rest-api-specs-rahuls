@@ -1566,7 +1566,7 @@
       "properties": {
         "location": {
           "type": "string",
-          "description": "The ARM location name of the additional region. If LocationProfile is specified, then location is required"
+          "description": "The ARM location name of the additional region. If LocationProfile is specified, then location is required."
         },
         "virtualMachineProfileOverride": {
           "$ref": "#/definitions/BaseVirtualMachineProfile",

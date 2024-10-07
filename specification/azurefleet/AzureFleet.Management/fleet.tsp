@@ -479,7 +479,7 @@ model LocationProfile {
   @doc("""
     The ARM location name of the additional region.
     """)
-  location?: string;
+  location: string;
 
   @doc("""
     An override for computeProfile.baseVirtualMachineProfile specific to this region. 

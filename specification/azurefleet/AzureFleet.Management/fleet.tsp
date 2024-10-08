@@ -371,7 +371,7 @@ union ArchitectureType {
   ARM64: "ARM64",
 
   @doc("X64 Architecture")
-  X86: "X64",
+  X64: "X64",
 }
 
 @added(Versions.v2024_11_01)
@@ -416,14 +416,13 @@ model VMAttributes {
 
   @doc("""
     The range of local storage in GB specified from Min to Max.
-    LocalStorageSupport should be set to "Included" or "Required" to use this VMAttribute. 
     If localStorageSupport is "Excluded", this VMAttribute can not be used.
     """)
   localStorageInGiB?: VMAttributeMinMaxDouble;
 
   @extension("x-ms-identifiers", [])
   @doc("""
-    The local storage disk types specified as a list. LocalStorageSupport should be set to "Included" or "Required" to use this VMAttribute. 
+    The local storage disk types specified as a list.
     If localStorageSupport is "Excluded", this VMAttribute can not be used.
     """)
   localStorageDiskTypes?: Array<LocalStorageDiskType>;

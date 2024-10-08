@@ -688,7 +688,7 @@
             "description": "ARM64 Architecture"
           },
           {
-            "name": "X86",
+            "name": "X64",
             "value": "X64",
             "description": "X64 Architecture"
           }
@@ -2470,11 +2470,11 @@
         },
         "localStorageInGiB": {
           "$ref": "#/definitions/VMAttributeMinMaxDouble",
-          "description": "The range of local storage in GB specified from Min to Max.\nLocalStorageSupport should be set to \"Included\" or \"Required\" to use this VMAttribute. \nIf localStorageSupport is \"Excluded\", this VMAttribute can not be used."
+          "description": "The range of local storage in GB specified from Min to Max.\nIf localStorageSupport is \"Excluded\", this VMAttribute can not be used."
         },
         "localStorageDiskTypes": {
           "type": "array",
-          "description": "The local storage disk types specified as a list. LocalStorageSupport should be set to \"Included\" or \"Required\" to use this VMAttribute. \nIf localStorageSupport is \"Excluded\", this VMAttribute can not be used.",
+          "description": "The local storage disk types specified as a list.\nIf localStorageSupport is \"Excluded\", this VMAttribute can not be used.",
           "items": {
             "$ref": "#/definitions/LocalStorageDiskType"
           },
